@@ -1,0 +1,17 @@
+name: warviorbot_v2
+version: '${project.version}'
+main: org.levaltru.warviorbot_v2.Warviorbot_v2
+api-version: '1.20'
+commands:
+  wban:
+    description: Банит человека на сервере и в Майнкрафте
+    usage: /wban <username> [hours] [reason]
+    permission: warvior_bot.wban
+  wpardon:
+    description: Разбанивает человека на сервере и в Майнкрафте
+    usage: /wpardon <username>
+    permission: warvior_bot.wban
+  wgetban:
+    description: Показывает сколько осталось ждать человеку до разбана и причину бана
+    usage: /wgetban <username>
+    permission: warvior_bot.wban
